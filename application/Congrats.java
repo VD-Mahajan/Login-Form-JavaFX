@@ -36,7 +36,13 @@ public class Congrats {
 			e.printStackTrace();
 		}catch(ClassNotFoundException ce) {
 			ce.printStackTrace();
-		}		
+		}finally {
+			try {
+				conn.close();				
+			}catch(SQLException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 	public static void show(boolean val,Stage window) {
 		
