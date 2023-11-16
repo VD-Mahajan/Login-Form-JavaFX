@@ -10,4 +10,8 @@ public class Connect {
 		
 		return conn;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9433620a6fa9da910fb43c9201b222c2736fc9f3

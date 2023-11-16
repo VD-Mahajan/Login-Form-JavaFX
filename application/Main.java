@@ -36,6 +36,7 @@ public class Main extends Application {
 		passwordTextField.setPromptText("password");
 		
 		Button submitButton = new Button("Submit");
+<<<<<<< HEAD
 		layout.setConstraints(submitButton, 0, 2);
 		submitButton.setOnAction(e->CongratsWindow.display(usernameTextField.getText(),passwordTextField.getText(),window));
 
@@ -47,6 +48,14 @@ public class Main extends Application {
 		
 		Scene scene = new Scene(layout,400,400);
 		window.setTitle("Login Page");
+=======
+		layout.setConstraints(submitButton, 1, 2);
+		submitButton.setOnAction(e->Congrats.display(usernameTextField.getText(),passwordTextField.getText(),primaryStage));
+		
+		layout.getChildren().addAll(username,usernameTextField,password,passwordTextField,submitButton);
+		
+		Scene scene = new Scene(layout,400,400);
+>>>>>>> 9433620a6fa9da910fb43c9201b222c2736fc9f3
 		window.setScene(scene);
 		window.show();		
 		
@@ -55,4 +64,8 @@ public class Main extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9433620a6fa9da910fb43c9201b222c2736fc9f3
