@@ -6,14 +6,6 @@ import java.sql.SQLException;
 
 public class Registration {
 	
-//	protected static String encrypt(String username) {
-//		for(int i=0;i<username.length();i++) {
-//			username.charAt(i);
-//		}
-//		username = ;
-//		return username;
-//	}
-	
 	public static void register(String username,String password) {
 		Connection conn=null;
 		Statement st=null;
